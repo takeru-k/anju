@@ -943,6 +943,7 @@ li {
   margin-right: -100px;
   margin-top: 120px;
   position: relative;
+  z-index: 2;
 }
 
 .p-mainVisual__btn {
@@ -1099,7 +1100,7 @@ li {
   width: 180px;
   height: 180px;
   top: -60px;
-  right: -7%;
+  right: -6%;
   z-index: -1;
 }
 
