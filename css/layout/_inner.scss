@@ -1,0 +1,14 @@
+.l-inner{
+  max-width: 1200px;
+  padding-right: 6%;
+  padding-left: 6%;
+  margin: 0 auto;
+}
+
+@media (min-width: 1024px){
+  
+.l-inner__main{
+  width: calc(100% - 300px);
+  margin-left: 300px;
+}
+}

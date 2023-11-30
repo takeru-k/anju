@@ -1,0 +1,155 @@
+@use "../setting/setting";
+
+.p-topServices{
+  padding: 24px 0 0;
+  position: relative;
+}
+
+.p-topServices__items{
+  padding: 40px 0 0;
+}
+
+.p-topServices__item{
+  margin-bottom: 104px;
+
+  &:last-child{
+    margin-bottom: 64px;
+  }
+}
+
+.p-topServices__img{
+  position: relative;
+  border-radius: 8px;
+
+  img{
+    position: relative;
+    height: 180px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-top: 24px;
+  }
+}
+
+.p-topServices__img01{
+  &:after{
+    position: absolute;
+    content: '';
+    background: url(../images/top/box1.png)no-repeat center
+          center/contain;;
+    width: 180px;
+    height: 180px;
+    top: -60px;
+    right: -7%;
+    z-index: -1;
+  }
+}
+
+.p-topServices__img02{
+  &:after{
+    position: absolute;
+    content: '';
+    background: url(../images/top/box2.png)no-repeat center
+          center/contain;;
+    width: 180px;
+    height: 180px;
+    top: -60px;
+    left: -7%;
+    z-index: -1;
+  }
+}
+
+.p-topServices__img03{
+  &:after{
+    position: absolute;
+    content: '';
+    background: url(../images/top/box3.png)no-repeat center
+          center/contain;;
+    width: 180px;
+    height: 180px;
+    top: -60px;
+    right: -7%;
+    z-index: -1;
+  }
+}
+
+.p-topServices__texts{
+  position: relative;
+  margin-top: 20px;
+}
+
+.p-topServices__num{
+  position: absolute;
+  display: inline-block;
+  top: -48px;
+  right: 5px;
+  color: #FFD055;
+  font-size: 68px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.p-topServices__heading{
+  font-size: 18px;
+  padding-top: 24px;
+}
+
+.p-topServices__lead{
+  margin-top: 8px;
+}
+
+@media (min-width: 768px){
+  .p-topServices{
+    padding: 64px 0 0;
+  }
+  .p-topServices__items{
+    padding: 90px 0 0;
+  }
+  .p-topServices__item{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding-bottom: 64px;
+
+    &:nth-child(2){
+      flex-direction: row;
+    }
+  }
+
+  .p-topServices__img{
+    width: 60%;
+
+    img{
+      height: 320px;
+    }
+
+    &:after{
+      width: 320px;
+      height: 240px;
+      top: -48px;
+      right: -10%;
+    }
+  }
+
+  .p-topServices__texts{
+    width: 36%;
+  }
+
+  .p-topServices__heading{
+    font-size: 28px;
+    margin-top: 16px;
+  }
+
+  .p-topServices__lead{
+    margin-top: 12px;
+  }
+
+  .p-topServices__num{
+    top: -64px;
+    left: -8px;
+    font-size: 80px;
+    z-index: -1;
+  }
+}

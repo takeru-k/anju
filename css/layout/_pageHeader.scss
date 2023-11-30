@@ -1,0 +1,48 @@
+@use "../setting/setting";
+
+.l-pageHeader{
+  background: setting.$color-main;
+  color: #fff;
+  padding: 16px 0;
+
+  p{
+    font-size: 14px;
+  }
+
+  h1{
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 768px){
+  .l-pageHeader{
+    padding: 24px 0;
+  }
+}
+
+@media (min-width: 1024px){
+  .l-pageHeader{
+    position: relative;
+    padding: 32px 0;
+
+    p{
+      font-size: 16px;
+    }
+
+    h1{
+      font-size: 28px;
+    }
+
+    &:after{
+      position: absolute;
+      content: "";
+      width: 160px;
+      height: 160px;
+      background: url(../images/top/mv-sun.png) no-repeat center
+        center/contain;
+      right: 6%;
+      top: 40%;
+      animation: rotate_anime 48s linear infinite;
+    }
+  }
+}

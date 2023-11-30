@@ -1,0 +1,47 @@
+@use "../setting/setting";
+
+.c-button{
+  position: relative;
+  transition: .4s;
+  position: relative;
+  padding-left: 40px;
+  font-size: 14px;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 16px;
+
+  &:after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background: url('../images/common/btn.png') no-repeat;
+    background-size:cover;   
+    height: 32px;
+    width: 32px;
+  }
+
+  &:hover{
+    opacity: .7;
+  }
+}
+
+.c-button__right{
+  text-align: right;
+  padding-right: 3%;
+}
+
+@media (min-width: 768px){
+  .c-button{
+    margin-top: 40px;
+    padding-left: 64px;
+
+    &:after{
+    content: '';
+      height: 48px;
+      width: 48px;
+    }
+  }
+}
+

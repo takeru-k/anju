@@ -1,0 +1,53 @@
+@use "../setting/setting";
+
+.c-heading{
+  position: relative;
+  text-align: center;
+
+  h2{
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1024px){
+  
+.c-heading{
+  h2{
+    font-size: 32px;
+  }
+}
+}
+
+/*================================
+	テキスト下のドット
+=================================*/
+
+.circle-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle-container__left{
+  justify-content: flex-start;
+}
+
+.circle {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin: 4px 2px 0;
+  /* 各丸に異なる色を適用 */
+}
+
+.circle1 {
+  background-color: setting.$color-main; /* 例: オレンジ色 */
+}
+
+.circle2 {
+  background-color: #FFD055; /* 例: ライムグリーン */
+}
+
+.circle3 {
+  background-color: setting.$color-main; /* 例: パープル */
+}

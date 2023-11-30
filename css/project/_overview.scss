@@ -1,0 +1,40 @@
+@use "../setting/setting";
+
+.p-overview{
+  background: setting.$color-sub;
+  padding: 40px 0;
+}
+
+.p-overview__contents{
+  padding-top: 40px;
+}
+
+.p-overview__table{
+  margin-bottom: 40px;
+
+  h3{
+    background: setting.$color-main;
+    display: inline-block;
+    border-radius: 10px 10px 0 0;
+    color: #fff;
+    padding: 8px 20px;
+    min-width: 100px;
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1024px){
+  .p-overview{
+    padding: 64px 0;
+  }
+
+  .p-overview__contents{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+
+  .p-overview__table{
+    width: 48%;
+  }
+}

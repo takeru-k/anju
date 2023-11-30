@@ -1,0 +1,39 @@
+@use "../setting/setting";
+
+.l-footer{
+  background: setting.$color-main;
+  padding: 32px 0 12px;
+  color:#FCFCFC;
+}
+
+.l-footer__contents{
+  h2{
+    width: 240px;
+    height: auto;
+  }
+
+  ul{
+    margin-top: 24px;
+  }
+
+  li{
+    margin-bottom: 4px;
+    font-size: 14px;
+  }
+}
+
+.l-footer__copy{
+  font-size: 14px;
+  margin-top: 40px;
+}
+
+@media (min-width: 768px){
+  .l-footer{
+    padding: 64px 0 12px;
+  }
+
+  .l-footer__copy{
+    text-align: right;
+    color: #f0f0f0;
+  }
+}

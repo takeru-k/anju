@@ -1,0 +1,12 @@
+@use "../setting/setting";
+
+.c-intro{
+  background: setting.$color-sub;
+  border-radius: 10px;
+  padding: 12px;
+  margin-top: 16px;
+
+  p{
+    margin-bottom: 8px;
+  }
+}

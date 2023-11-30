@@ -1,0 +1,9 @@
+@use "../setting/setting";
+
+@media (min-width: 768px){
+  .p-archive{
+    a{
+      margin-bottom: 40px;
+    }
+  }
+}

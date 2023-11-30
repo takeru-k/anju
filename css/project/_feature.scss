@@ -1,0 +1,39 @@
+@use "../setting/setting";
+
+.p-feature{
+  background: setting.$color-sub;
+  padding: 24px 12px;
+  margin-top: 24px;
+}
+
+.p-feature__item{
+  background: #fff;
+  padding: 16px 12px;
+  border-radius: 10px;
+  margin-bottom: 24px;
+}
+
+.p-feature__heading{
+  h3{
+    font-size: 18px;
+    margin-top: 8px;
+  }
+}
+
+.p-feature__texts{
+  margin-top: 12px;
+}
+
+@media (min-width: 768px){
+  .p-feature{
+    margin-top: 40px;
+    padding: 40px;
+  }
+}
+
+@media (min-width: 1024px){
+  .p-feature__item{
+    padding: 24px 40px;
+    margin-bottom: 48px;
+  }
+}

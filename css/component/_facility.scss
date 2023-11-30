@@ -1,0 +1,35 @@
+@use "../setting/setting";
+
+.c-facility{
+  padding: 24px 0;
+
+  li{
+    margin-bottom: 20px;
+  }
+
+  img{
+    border-radius: 10px;
+    height: 230px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  figcaption{
+    text-align: center;
+    margin-top: 8px;
+  }
+}
+
+@media (min-width: 768px){
+  .c-facility{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 40px;
+
+    li{
+      width: 30%;
+      margin-bottom: 32px;
+    }
+  }
+}

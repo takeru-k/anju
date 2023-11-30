@@ -1,0 +1,142 @@
+@use "../setting/setting";
+
+.p-mainVisual{
+  background: setting.$color-sub;
+  padding: 40px 20px 42px;
+  position: relative;
+  overflow: hidden;
+}
+
+.p-mainVisual__inner{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.p-mainVisual__heading{
+  position: relative;
+  z-index: 2;
+
+  p{
+    letter-spacing: .04em;
+    font-weight: bold;
+    display: inline-block;
+    border-radius: 4px;
+    margin-top: 16px;
+  }
+
+  h1{
+    font-size: 36px;
+    font-feature-settings: "palt";
+    margin-top: 16px;
+    letter-spacing: .04em;
+  }
+}
+
+.p-mainVisual__img{
+  position: relative;
+  z-index: 1;
+  margin-top: -84px;
+}
+
+.p-mainVisual__img-sun{
+  display: block;
+  top: -200px;
+  right: -100px;
+  position: absolute;
+  width: 300px;
+  max-width: 100%;
+}
+
+.p-mainVisual__img-person{
+  margin-right: -100px;
+  margin-top: 120px;
+  position: relative;
+}
+
+.p-mainVisual__btn{
+  margin-left: 0;
+}
+
+/*================================
+	tab
+=================================*/
+
+@media (min-width: 768px){
+  .p-mainVisual{
+  .p-mainVisual__inner{
+    display: flex;
+    max-width: 1440px;
+    padding-right: 6%;
+    padding-left: 8%;
+    margin: 0 auto;
+  }
+
+    .p-mainVisual__content{
+    width: 40%;
+    margin-top: 40px;
+  }
+
+  .p-mainVisual__img{
+    display: block;
+    width: 60%;
+    margin-top: -20px;
+    
+    img{
+      height: auto;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+/*================================
+	PC
+=================================*/
+
+@media (min-width: 1024px){
+  .p-mainVisual{
+    padding: 100px 0 80px;
+  }
+
+  .p-mainVisual__heading{
+    p{
+      font-size: 20px;
+    }
+
+    h1{
+      font-size: 44px;
+
+      span{
+        font-size: 60px;
+        margin-left: 4px;
+      }
+    }
+  }
+}
+
+  .p-mainVisual__img-sun{
+    max-width: 600px;
+  }
+
+  .p-mainVisual__img-person{
+    padding-right: 180px;
+    margin-top: 140px;
+  }
+
+}
+
+/*================================
+	アニメーション用CSS
+=================================*/
+.rotate{
+  animation: rotate_anime 48s linear infinite;
+}
+
+@keyframes rotate_anime {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

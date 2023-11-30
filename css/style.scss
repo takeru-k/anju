@@ -1,0 +1,29 @@
+
+@use "setting/reset";
+@use "setting/setting";
+
+@use "layout/header";
+@use "layout/inner";
+@use "layout/footer";
+@use "layout/pageHeader";
+
+@use "component/hamburger";
+@use "component/flex.scss";
+@use "component/button.scss";
+@use "component/heading.scss";
+@use "component/text.scss";
+@use "component/cta.scss";
+@use "component/section.scss";
+@use "component/table.scss";
+@use "component/article.scss";
+@use "component/photos.scss";
+@use "component/intro.scss";
+@use "component/facility.scss";
+
+@use "project/mainVisual";
+@use "project/availability";
+@use "project/topServices";
+@use "project/overview";
+@use "project/feature";
+@use "project/archive";
+@use "project/profile";
