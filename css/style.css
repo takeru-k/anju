@@ -902,7 +902,7 @@ li {
 }
 
 .p-mainVisual__inner {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
@@ -956,9 +956,8 @@ li {
 @media (min-width: 768px) {
   .p-mainVisual .p-mainVisual__inner {
     display: flex;
-    max-width: 1440px;
     padding-right: 6%;
-    padding-left: 8%;
+    padding-left: 6%;
     margin: 0 auto;
   }
   .p-mainVisual .p-mainVisual__content {
@@ -985,10 +984,16 @@ li {
     padding: 100px 0 80px;
   }
   .p-mainVisual__heading p {
-    font-size: 20px;
+    font-size: 18px;
+    margin-top: 32px;
+  }
+  .p-mainVisual__heading p br {
+    display: none;
   }
   .p-mainVisual__heading h1 {
-    font-size: 44px;
+    font-size: 64px;
+    line-height: 1.4;
+    letter-spacing: 8px;
   }
   .p-mainVisual__heading h1 span {
     font-size: 60px;
